@@ -32,6 +32,7 @@ public class LocalSettingsService : ILocalSettingsService
 
     public LocalSettingsService(IOptions<LocalSettingsOptions> options, ILogger<LocalSettingsService> logger)
     {
+        _logger = logger;
         var opt = options.Value;
 
         _logger = logger;
