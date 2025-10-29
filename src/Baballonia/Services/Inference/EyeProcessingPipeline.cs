@@ -15,7 +15,7 @@ public class EyeProcessingPipeline : DefaultProcessingPipeline, IDisposable
         _eyePipelineEventBus = eyePipelineEventBus;
     }
 
-    public bool StabilizeEyes { get; set; } = false;
+    public bool StabilizeEyes { get; set; } = true;
 
     public float[]? RunUpdate()
     {

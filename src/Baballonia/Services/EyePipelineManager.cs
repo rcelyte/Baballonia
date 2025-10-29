@@ -99,7 +99,7 @@ public class EyePipelineManager
 
     public void LoadEyeStabilization()
     {
-        var stabilizeEyes = _localSettings.ReadSetting<bool>("AppSettings_StabilizeEyes", false);
+        var stabilizeEyes = _localSettings.ReadSetting<bool>("AppSettings_StabilizeEyes", true);
         _pipeline.StabilizeEyes = stabilizeEyes;
     }
 

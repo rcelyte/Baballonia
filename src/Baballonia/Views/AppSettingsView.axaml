@@ -337,6 +337,12 @@
           IconPath="TopSpeedRegular"
           SettingToggled="{Binding UseGPU, Mode=TwoWay}" />
 
+      <controls:SettingsToggle
+          Title="{x:Static assets:Resources.Calibration_Eye_Expressions_Stabilize_Eyes_Header}"
+          Description="{x:Static assets:Resources.Calibration_Eye_Expressions_Stabilize_Eyes_Description}"
+          IconPath="EyeTrackingRegular"
+          SettingToggled="{Binding StabilizeEyes, Mode=TwoWay}" />
+
       <controls:SettingsBlock
         Title="{x:Static assets:Resources.Settings_LogLevel_Header}"
         Description="{x:Static assets:Resources.Settings_LogLevel_Description}"
